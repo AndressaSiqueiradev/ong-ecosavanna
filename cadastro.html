@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastre-se — EcoSavanna</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>EcoSavanna</h1>
+    <nav aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="cadastro.html">Cadastre-se</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Cadastro de voluntário / doador</h2>
+    <p>Neste formulário você pode se inscrever como voluntário ou manifestar interesse em apoiar financeiramente.</p>
+
+    <!-- O formulário abaixo demonstra campos comuns; method=post é a forma usual de enviar dados -->
+    <form id="signup-form" action="#" method="post" aria-label="Formulário de cadastro">
+      <!-- 1) Tipo de usuário: voluntário ou doador -->
+      <fieldset>
+        <legend>Você quer ser:</legend>
+        <!-- radio buttons: escolha única -->
+        <label><input type="radio" name="tipo" value="voluntario" checked> Voluntário</label>
+        <label><input type="radio" name="tipo" value="doador"> Doador</label>
+      </fieldset>
+
+      <!-- 2) Dados pessoais básicos -->
+      <label for="nome">Nome completo</label>
+      <input id="nome" name="nome" type="text" placeholder="Maria Silva" required>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="seu@email.com" required>
+
+      <!-- 3) Telefone (opcional) -->
+      <label for="telefone">Telefone (opcional)</label>
+      <input id="telefone" name="telefone" type="tel" placeholder="+55 11 9XXXX-XXXX">
+
+      <!-- 4) Se for voluntário: área de interesse (checkboxes permitem múltiplas escolhas) -->
+      <fieldset>
+        <legend>Áreas de interesse (se voluntário)</legend>
+        <label><input type="checkbox" name="area" value="resgate"> Resgate</label>
+        <label><input type="checkbox" name="area" value="educacao"> Educação</label>
+        <label><input type="checkbox" name="area" value="reflorestamento"> Reflorestamento</label>
+      </fieldset>
+
+      <!-- 5) Uma pequena mensagem ou disponibilidade -->
+      <label for="mensagem">Mensagem / disponibilidade</label>
+      <textarea id="mensagem" name="mensagem" rows="4" placeholder="Quando posso ajudar?"></textarea>
+
+      <!-- 6) Aceite de termos (ex.: LGPD) -->
+      <label>
+        <input type="checkbox" id="termos" name="termos" required>
+        Concordo com a <a href="politica-privacidade.html">Política de Privacidade</a> e autorizei o uso dos meus dados.
+      </label>
+
+      <!-- Botão principal -->
+      <button type="submit" class="btn">Enviar cadastro</button>
+    </form>
+
+    <!-- ==========================
+         JavaScript inline (explicado passo a passo)
+         Abaixo temos um script simples para demonstrar validação e feedback.
+         Em projetos maiores preferimos um arquivo separado (assets/js/main.js).
+         ========================== -->
+    <script>
+      // Primeiro, pegamos o formulário pelo id
+      const form = document.getElementById('signup-form');
+
+      // Adicionamos um "ouvinte" de evento que será executado quando o formulário for enviado
+      form.addEventListener('submit', function(event) {
+        // Previnir envio real (para fins didáticos) — impede que a página recarregue
+        event.preventDefault();
+
+        // Coletar valores simples do formulário
+        const nome = document.getElementById('nome').value.trim();
+        const email = document.getElementById('email').value.trim();
+
+        // Validações básicas — mostramos alertas simples para o usuário
+        if (!nome || !email) {
+          // Se algum campo obrigatório estiver vazio, avisamos e interrompemos o envio
+          alert('Por favor, preencha nome e email.');
+          return;
+        }
+
+        // Aqui, normalmente enviaríamos os dados para um servidor via fetch/axios.
+        // Exemplo didático (simulado):
+        const dados = new FormData(form); // FormData pega todos os campos automaticamente
+        // Para ver os dados no console (bom para depurar em desenvolvimento):
+        // console.log(Object.fromEntries(dados.entries()));
+
+        // Indicamos sucesso para o usuário
+        alert('Cadastro enviado com sucesso! Obrigado por se juntar à EcoSavanna.');
+
+        // Opcional: limpar o formulário após envio
+        form.reset();
+      });
+    </script>
+  </main>
+
+  <footer>
+    <p>© EcoSavanna — Fundadora: Angelina Robert</p>
+  </footer>
+</body>
+</html>

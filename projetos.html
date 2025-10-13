@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projetos — EcoSavanna</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Header reaproveitado (poderia estar em um include se usássemos templates) -->
+  <header>
+    <h1>EcoSavanna</h1>
+    <nav aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="cadastro.html">Cadastre-se</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Projetos</h2>
+    <p>Aqui você encontra os projetos que estamos desenvolvendo e como ajudar.</p>
+
+    <!-- Cada projeto dentro de um article com id (âncora) para link direto -->
+    <article id="elefantes" aria-labelledby="elefantes-title">
+      <h3 id="elefantes-title">Resgate Elefante Azul</h3>
+      <p>Descrição: resgate, tratamento e reabilitação de elefantes vítimas de armadilhas.</p>
+      <p>Meta atual: R$ 50.000 — arrecadado: R$ 18.250</p>
+
+      <!-- Barra de progresso simples (acessibilidade com aria) -->
+      <div role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="36" style="width:100%; max-width: 320px; border: 1px solid #ccc;">
+        <!-- Este div poderia ser preenchido via CSS (ex.: width:36%) -->
+        <div style="width:36%; height:16px; background:green;"></div>
+      </div>
+
+      <!-- Botão que leva para um formulário de doação (aqui apontamos para a mesma página com âncora #doar) -->
+      <p><a href="#doar" class="btn">Doar para este projeto</a></p>
+    </article>
+
+    <article id="reflorestamento" aria-labelledby="reflorestamento-title">
+      <h3 id="reflorestamento-title">Plantando Esperança</h3>
+      <p>Descrição: reflorestamento de áreas degradadas para recuperar rotas de migração.</p>
+      <p>Meta atual: R$ 20.000 — arrecadado: R$ 9.400</p>
+      <p><a href="#doar" class="btn">Doar para este projeto</a></p>
+    </article>
+
+    <article id="educacao" aria-labelledby="educacao-title">
+      <h3 id="educacao-title">Educação Comunitária</h3>
+      <p>Descrição: oficinas e materiais educativos para crianças e adultos.</p>
+      <p>Meta atual: R$ 10.000 — arrecadado: R$ 5.100</p>
+      <p><a href="#doar" class="btn">Doar para este projeto</a></p>
+    </article>
+
+    <!-- Seção de doação (âncora) - poderia abrir um modal; aqui está simples e direta -->
+    <section id="doar" aria-labelledby="doar-title">
+      <h3 id="doar-title">Faça uma doação</h3>
+      <p>Escolha o valor e confirme. Em produção, aqui seria integrado a um gateway de pagamento.</p>
+
+      <!-- Este formulário é uma simulação; em um site real, action apontaria para o servidor ou gateway -->
+      <form id="donation-form" action="#" method="post" aria-label="Formulário de doação">
+        <!-- Campo de nome -->
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+        <!-- Campo de e-mail -->
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+
+        <!-- Valor da doação (select para simplicidade) -->
+        <label for="valor">Valor da doação</label>
+        <select id="valor" name="valor" required>
+          <option value="">Selecione</option>
+          <option value="25">R$25</option>
+          <option value="50">R$50</option>
+          <option value="100">R$100</option>
+          <option value="outro">Outro valor</option>
+        </select>
+
+        <!-- Botão de enviar -->
+        <button type="submit" class="btn">Contribuir</button>
+      </form>
+
+      <!-- Nota: a validação básica do formulário pode ser feita pelo navegador (atributo required).
+           Para validações mais elaboradas usamos JavaScript. -->
+    </section>
+  </main>
+
+  <footer>
+    <p>© EcoSavanna — Contato: contato@ecosavanna.org</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
