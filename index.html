@@ -1,72 +1,249 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EcoSavanna - Protegendo a Vida Selvagem</title>
-
-  <!-- Aqui estamos conectando o arquivo CSS externo -->
-  <link rel="stylesheet" href="assets/css/style.css">
+<meta charset="UTF-8">
+<title>Instituto Eco Savanna</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:700,500,400&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <!-- Cabeçalho da página: contém o nome da ONG e o menu de navegação -->
-  <header>
-    <h1>EcoSavanna</h1>
+<!-- Cabeçalho-->
+<header>
+<div id="logo">
+<h1>Instituto Eco Savanna</h1>
+</div>
+<nav>
+<ul>
+<li><a href="index.html">Início</a></li>
+<li class="dropdown">
+<a href="#">Quem Somos ▼</a>
+<ul class="dropdown-menu">
+<li><a href="#mvv">Missão, Visão e Valores</a></li>
+<li><a href="#biologos">Nossa Equipe</a></li>
+<li><a href="#reportagem">Na Mídia</a></li>
+</ul>
+</li>
+<li><a href="projetos.html">Projetos</a></li>
+<li><a href="cadastro.html">Cadastro</a></li>
+</ul>
+</nav>
+</header>
 
-    <!-- Menu de navegação: permite trocar de página -->
-    <nav>
-      <a href="index.html">Início</a>
-      <a href="projetos.html">Projetos</a>
-      <a href="cadastro.html">Cadastre-se</a>
-    </nav>
-  </header>
+<section id="banner">
+<div class="carrossel">
+<img src="assets/imagens/animal01.jpg" alt="leão" class="carrossel-img ativo">
+<img src="assets/imagens/animal02.jpg" alt="onça" class="carrossel-img">
+<img src="assets/imagens/animal03.jpg" alt="leão 2" class="carrossel-img">
+<img src="assets/imagens/animal04.jpg" alt="girrafa" class="carrossel-img">
+<img src="assets/imagens/animal05.jpg" alt="zebra" class="carrossel-img">
+<img src="assets/imagens/animal06.jpg" alt="zebra 2" class="carrossel-img">
+<img src="assets/imagens/animal07.jpg" alt="leão 3" class="carrossel-img">
+<img src="assets/imagens/animal08.jpg" alt="onça 2" class="carrossel-img">
+<img src="assets/imagens/animal09.jpg" alt="elefante" class="carrossel-img">
+<img src="assets/imagens/animal10.jpg" alt="zbra 3" class="carrossel-img">
+<img src="assets/imagens/animal11.jpg" alt="tigre" class="carrossel-img">
+<img src="assets/imagens/animal12.jpg" alt="Filhotes" class="carrossel-img">
+<img src="assets/imagens/animal13.jpg" alt="elefante " class="carrossel-img">
+<img src="assets/imagens/animal14.jpg" alt="elefante" class="carrossel-img">
+<img src="assets/imagens/animal15.jpg" alt="animais" class="carrossel-img">
+<img src="assets/imagens/imagem 16.jpg" alt="leão branco" class="carrossel-img">
+<div class="banner-conteudo">
+<h2>A natureza agradece, os animais vivem!</h2>
+<p>Cuidando dos animais na África desde 1985</p>
+<a href="#ajudar">Quero ajudar</a>
+</div>
+</div>
+</section>
 
-  <!-- Seção principal com imagem de destaque (herói) -->
-  <section class="hero">
-    <h2>Juntos pela proteção da savana africana 🌍</h2>
-    <p>Desde 2015, defendendo animais em extinção e preservando o ecossistema natural.</p>
+<!-- MISSÃO, VISÃO, VALORES -->
+<section id="mvv" class="missao-visao-valores">
+<div class="mvv-content">
+<div class="mvv-fotos-col">
+<img src="assets/imagens/pessoas com leao.webp" alt="pessoas com leao" class="mvv-foto-mvv">
+<img src="assets/imagens/foto na savanna.webp" alt="Biólogos fazendo foto" class="mvv-foto-mvv">
+<img src="assets/imagens/foto com tigre.jpg" alt="Ação educativa com voluntários" class="mvv-foto-mvv">
+<img src="assets/imagens/foto pessoa fazendo foto.webp" alt=" foto voluntários" class="mvv-foto-mvv">
+<img src="assets/imagens/pessoas no safari.jpg" alt="voluntários" class="mvv-foto-mvv">
+</div>
+<div class="mvv-texto">
+<div class="mvv-texto">
+<h2>Missão, Visão e Valores</h2>
+<h3>Nossa Missão</h3>
+<p>
 
-    <!-- Botões chamando o usuário para agir -->
-    <a href="cadastro.html" class="btn">Seja voluntário</a>
-    <a href="#" class="btn-secondary">Faça uma doação</a>
-  </section>
+🌍 Missão
 
-  <!-- Seção "sobre" com uma breve explicação da missão -->
-  <section class="about">
-    <h3>Nossa Missão</h3>
-    <p>
-      Proteger a biodiversidade da savana africana, resgatar animais feridos e educar comunidades
-      sobre sustentabilidade e coexistência.  
-    </p>
-  </section>
+Proteger a vida selvagem da savana africana, promovendo a convivência harmoniosa entre pessoas e animais, 
+e preservando ecossistemas ameaçados pela caça ilegal e pelas mudanças climáticas.
 
-  <!-- Seção de destaque com cards interativos -->
-  <section class="cards">
-    <h3>Áreas de Atuação</h3>
+</p>
+<h3>Visão</h3>
+<p>
+🌿 Visão
 
-    <!-- Cada card representa uma ação da ONG -->
+Ser uma referência em conservação ambiental na África, inspirando comunidades locais e parceiros internacionais
+ a defenderem a biodiversidade e os direitos dos animais.
+</p>
+<h3>💚 Valores</h3>
+<ul>
+<li>Respeito à vida: cada ser vivo tem um papel essencial no equilíbrio do planeta.</li>
+<li>Sustentabilidade: agir hoje para garantir um futuro para as próximas gerações.</li>
+<li>Educação: a conscientização é o primeiro passo para a transformação.</li>
+<li>Colaboração: unir forças entre pessoas, comunidades e natureza para alcançar resultados duradouros.</li>
+<li>Transparência: cada doação, projeto e resultado é compartilhado de forma aberta e responsável.</li>
+
+
+<h3>🦁 Motivação / História </h3>
+</ul>
+<p class="mvv-materia">
+<strong>Matéria destaque:</strong> <br>
+Recentemente, fomos destaque no portal <em>EcoMundo</em> com a reportagem 
+"<em>Guardando a Savana: a missão que salva elefantes e inspira o mundo</em>". 
+A matéria mostrou o impacto do nosso trabalho em comunidades locais e como ações 
+educativas e de resgate vêm transformando a relação entre pessoas e a vida selvagem. <br>
+<a href="#" target="_blank">Leia matéria completa.</a>
+</p>
+
+<p>
+Fundada em <strong>1995</strong> pela bióloga <strong>Angelina Robert</strong>, apaixonada pela savana africana, 
+a ONG nasceu após uma expedição em que ela presenciou a destruição de habitats e a caça de espécies ameaçadas. 
+Movida por esse impacto, Angelina criou uma organização dedicada a <strong>proteger a fauna, restaurar ecossistemas 
+e educar comunidades</strong> sobre a importância da conservação.
+</p>
+
+<p>
+Desde então, atuamos no <strong>resgate e reabilitação de animais silvestres</strong>, 
+em <strong>projetos de reflorestamento</strong> e na <strong>proteção de reservas naturais</strong>. 
+Com o apoio de voluntários e doadores do mundo todo, seguimos garantindo que 
+<strong>leões, elefantes e rinocerontes</strong> continuem vivendo livres e seguros nas savanas africanas.
+</p>
+
+<p>
+Cada contribuição — seja por meio de <strong>doações</strong> ou <strong>trabalho voluntário</strong> — 
+mantém viva a essência da África selvagem e o sonho de um planeta em equilíbrio.
+</p>
+</div>
+</div>
+</section>
+
+
+<section id="biologos">
+<h2>Nossos Biólogos</h2>
+<div class="bio-cards">
+<div class="bio-card">
+<img src="assets/imagens/homem.webp" alt="Jeferson Dumokl, biólogo Cofundador" class="bio-foto">
+<div>
+<h3>Jeferson Dumokl</h3>
+<span class="bio-cargo">Biólogo  — CoFundador</span>
+<p>“Desde 1987, dedico minha vida à proteção dos animais na Savanna e à educação ambiental.”</p>
+</div>
+</div>
+<div class="bio-card">
+<img src="assets/imagens/mulher hofmaan.jpg" alt="Clara Holffman, bióloga e educadora" class="bio-foto">
+<div>
+<h3> Clara Holffman</h3>
+<span class="bio-cargo">Bióloga & Educadora</span>
+<p>“Acredito que sensibilizar a população é plantar um futuro melhor para o mundo e toda a vida
+terrestre.”</p>
+</div>
+</div>
+<div class="bio-card">
+<img src="assets/imagens/mulher 2.jpg" alt="Dayana, Projetos & Voluntariado"
+class="bio-foto">
+<div>
+<h3>Dayana Francesco</h3>
+<span class="bio-cargo">Bióloga — Projetos & Voluntariado</span>
+<p>“Cada voluntário é uma onda de esperança: juntos, fazemos diferença real na África e no mundo!”</p>
+</div>
+</div>
+</div>
+</section>
+
+<main>
+<!-- Projetos em destaque -->
+<section id="projetos">
+  <h2>Projetos em destaque</h2>
+  <div class="cards-projetos">
+
     <div class="card">
-      <img src="assets/imagens/elefante.jpg" alt="Proteção dos Elefantes">
-      <h4>Proteção dos Elefantes</h4>
-      <p>Combatemos a caça ilegal e garantimos segurança para as famílias de elefantes.</p>
+      <h3>Resgate e Reabilitação de Animais</h3>
+      <p>Equipe especializada atua no resgate de espécies feridas por caça ilegal, garantindo tratamento, reabilitação e retorno seguro à natureza.</p>
     </div>
 
     <div class="card">
-      <img src="assets/imagens/arvore.jpg" alt="Reflorestamento">
-      <h4>Reflorestamento</h4>
-      <p>Plantamos novas árvores e restauramos o equilíbrio natural da savana.</p>
+      <h3>Educação Ambiental nas Comunidades</h3>
+      <p>Programas educativos em escolas e vilarejos promovem a conscientização sobre convivência sustentável entre pessoas e fauna selvagem.</p>
     </div>
 
     <div class="card">
-      <img src="assets/imagens/educacao.jpg" alt="Educação Ambiental">
-      <h4>Educação Ambiental</h4>
-      <p>Ensinamos comunidades locais sobre a importância da conservação ambiental.</p>
+      <h3>Reflorestamento da Savana</h3>
+      <p>Iniciativas de plantio de espécies nativas restauram áreas degradadas, fortalecendo os ecossistemas e garantindo alimento e abrigo para os animais.</p>
     </div>
-  </section>
 
-  <!-- Rodapé com direitos autorais -->
-  <footer>
-    <p>© 2025 EcoSavanna. Todos os direitos reservados.</p>
-  </footer>
+    <div class="card">
+      <h3>Proteção Contra a Caça Ilegal</h3>
+      <p>Patrulhas de conservação e tecnologias de monitoramento ajudam a combater a caça e proteger espécies ameaçadas, como leões, elefantes e rinocerontes.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Reportagem em destaque -->
+<section id="reportagem" style="margin: 38px auto 20px auto; max-width: 950px;">
+<img src="assets/imagens/foto de equipe.jpg" alt="Equipe na reportagem do jornal Vida na Savanna"
+style="width:100%;max-width:480px;float:left;margin-right:2em;border-radius:18px;box-shadow:0 2px 10px #0001;">
+<div style="overflow:hidden;">
+<h2 style="color:#2e8bcc;margin-top:0;">Reportagem em Destaque</h2>
+<p><strong>"A Eco Savana foi destaque no portal EcoMundo desta semana: conheça nossa missão de proteger a vida selvagem africana!"</strong></p>
+
+<p>
+Nossa ONG ganhou destaque em um dos principais portais de conservação ambiental, inspirando pessoas ao redor do mundo a agir pela natureza.<br>
+“A equipe liderada por Angelina Robert é referência em preservação da savana e orgulho para a causa ambiental internacional”... 
+<a href="#" target="_blank">Leia a matéria completa aqui.</a>
+</p>
+</p>
+</div>
+</section>
+
+<!-- Como ajudar -->
+<section id="ajudar">
+<h2>Como ajudar</h2>
+<div class="formas-ajuda">
+<div class="ajuda-item">
+<span role="img" aria-label="Mãos juntas">🤝</span>
+<a href="cadastro.html" class="ajuda-link-vol">
+<h3>Seja Voluntário</h3>
+</a>
+<p>Participe das ações em todos os continentes, e nas escolas. Faça parte do nosso time!</p>
+</div>
+<div class="ajuda-item">
+<span role="img" aria-label="Coração">💙</span>
+<h3>Faça uma doação</h3>
+<p>Ajude nosso trabalho de proteção a continuar e crescer. Qualquer valor faz diferença.</p>
+</div>
+<div class="ajuda-item">
+<span role="img" aria-label="Megafone">📢</span>
+<h3>Compartilhe</h3>
+<p>Divulgue nossos projetos nas redes sociais e amplie nossa mensagem!</p>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<p>
+Instituto Eco Savanna | Fundado em 1985 | África - Savanna <br>
+Contato: <a href="mailto:contato@ecosavanna.org">contato@ecosavanna.org</a> |
+(99) 93939-9292
+</p>
+<p>&copy; 2025. Todos os direitos reservados.</p>
+</footer>
+
+<script src="js/mascaras.js"></script>
+<script src="js/carrossel.js"></script>
 </body>
+
 </html>

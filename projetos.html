@@ -1,94 +1,121 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Projetos — EcoSavanna</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+<meta charset="UTF-8">
+<title>Projetos | Instituto Eco Savanna</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Poppins:700,500,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <!-- Header reaproveitado (poderia estar em um include se usássemos templates) -->
-  <header>
-    <h1>EcoSavanna</h1>
-    <nav aria-label="Navegação principal">
-      <a href="index.html">Início</a>
-      <a href="projetos.html">Projetos</a>
-      <a href="cadastro.html">Cadastre-se</a>
-    </nav>
-  </header>
+<header>
+<div id="logo">
+<h1>Instituto Eco Savanna</h1>
+</div>
+<nav>
+<ul>
+<li><a href="index.html">Início</a></li>
+<li><a href="projetos.html">Projetos</a></li>
+<li><a href="cadastro.html">Cadastro</a></li>
+</ul>
+</nav>
+</header>
 
-  <main>
-    <h2>Projetos</h2>
-    <p>Aqui você encontra os projetos que estamos desenvolvendo e como ajudar.</p>
+<section id="banner">
+<div class="carrossel">
+<img src="assets/imagens/animal01.jpg" alt="leão" class="carrossel-img ativo">
+<img src="assets/imagens/animal02.jpg" alt="onça" class="carrossel-img">
+<img src="assets/imagens/animal03.jpg" alt="leão 2" class="carrossel-img">
+<img src="assets/imagens/animal04.jpg" alt="girrafa" class="carrossel-img">
+<img src="assets/imagens/animal05.jpg" alt="zebra" class="carrossel-img">
+<img src="assets/imagens/animal06.jpg" alt="zebra 2" class="carrossel-img">
+<img src="assets/imagens/animal07.jpg" alt="leão 3" class="carrossel-img">
+<img src="assets/imagens/animal08.jpg" alt="onça 2" class="carrossel-img">
+<img src="assets/imagens/animal09.jpg" alt="elefante" class="carrossel-img">
+<img src="assets/imagens/animal10.jpg" alt="zbra 3" class="carrossel-img">
+<img src="assets/imagens/animal11.jpg" alt="tigre" class="carrossel-img">
+<img src="assets/imagens/animal12.jpg" alt="Filhotes" class="carrossel-img">
+<img src="assets/imagens/animal13.jpg" alt="elefante " class="carrossel-img">
+<img src="assets/imagens/animal14.jpg" alt="elefante" class="carrossel-img">
+<img src="assets/imagens/animal15.jpg" alt="animais" class="carrossel-img">
+<img src="assets/imagens/imagem 16.jpg" alt="leão branco" class="carrossel-img">
+<div class="banner-conteudo">
+<h2>Projetos que transformam o mundo!</h2>
+<p>Conheça nossas ações para cuidar da vida dos animais e natureza.<br>
+Seja parte desse impacto positivo você também!</p>
+</div>
+</section>
 
-    <!-- Cada projeto dentro de um article com id (âncora) para link direto -->
-    <article id="elefantes" aria-labelledby="elefantes-title">
-      <h3 id="elefantes-title">Resgate Elefante Azul</h3>
-      <p>Descrição: resgate, tratamento e reabilitação de elefantes vítimas de armadilhas.</p>
-      <p>Meta atual: R$ 50.000 — arrecadado: R$ 18.250</p>
+<main>
+<!-- Sessão Projetos -->
+<section id="projetos">
+  <h2>Projetos em destaque</h2>
+  <div class="cards-projetos">
 
-      <!-- Barra de progresso simples (acessibilidade com aria) -->
-      <div role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="36" style="width:100%; max-width: 320px; border: 1px solid #ccc;">
-        <!-- Este div poderia ser preenchido via CSS (ex.: width:36%) -->
-        <div style="width:36%; height:16px; background:green;"></div>
-      </div>
+    <div class="card">
+      <h3>Resgate e Reabilitação de Animais</h3>
+      <p>Equipe especializada atua no resgate de espécies feridas por caça ilegal, garantindo tratamento, reabilitação e retorno seguro à natureza.</p>
+    </div>
 
-      <!-- Botão que leva para um formulário de doação (aqui apontamos para a mesma página com âncora #doar) -->
-      <p><a href="#doar" class="btn">Doar para este projeto</a></p>
-    </article>
+    <div class="card">
+      <h3>Educação Ambiental nas Comunidades</h3>
+      <p>Programas educativos em escolas e vilarejos promovem a conscientização sobre convivência sustentável entre pessoas e fauna selvagem.</p>
+    </div>
 
-    <article id="reflorestamento" aria-labelledby="reflorestamento-title">
-      <h3 id="reflorestamento-title">Plantando Esperança</h3>
-      <p>Descrição: reflorestamento de áreas degradadas para recuperar rotas de migração.</p>
-      <p>Meta atual: R$ 20.000 — arrecadado: R$ 9.400</p>
-      <p><a href="#doar" class="btn">Doar para este projeto</a></p>
-    </article>
+    <div class="card">
+      <h3>Reflorestamento da Savana</h3>
+      <p>Iniciativas de plantio de espécies nativas restauram áreas degradadas, fortalecendo os ecossistemas e garantindo alimento e abrigo para os animais.</p>
+    </div>
 
-    <article id="educacao" aria-labelledby="educacao-title">
-      <h3 id="educacao-title">Educação Comunitária</h3>
-      <p>Descrição: oficinas e materiais educativos para crianças e adultos.</p>
-      <p>Meta atual: R$ 10.000 — arrecadado: R$ 5.100</p>
-      <p><a href="#doar" class="btn">Doar para este projeto</a></p>
-    </article>
+    <div class="card">
+      <h3>Proteção Contra a Caça Ilegal</h3>
+      <p>Patrulhas de conservação e tecnologias de monitoramento ajudam a combater a caça e proteger espécies ameaçadas, como leões, elefantes e rinocerontes.</p>
+    </div>
 
-    <!-- Seção de doação (âncora) - poderia abrir um modal; aqui está simples e direta -->
-    <section id="doar" aria-labelledby="doar-title">
-      <h3 id="doar-title">Faça uma doação</h3>
-      <p>Escolha o valor e confirme. Em produção, aqui seria integrado a um gateway de pagamento.</p>
+  </div>
+</section>
 
-      <!-- Este formulário é uma simulação; em um site real, action apontaria para o servidor ou gateway -->
-      <form id="donation-form" action="#" method="post" aria-label="Formulário de doação">
-        <!-- Campo de nome -->
-        <label for="nome">Nome completo</label>
-        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+<!-- Sessão Voluntariado -->
+<section id="voluntariado" class="dest-secao">
+<div class="vol-box">
+<div class="vol-icone">🤝</div>
+<div>
+<h2>Voluntariado</h2>
+<p>Quer fazer a diferença? Junte-se ao nosso time de voluntários e participe dos projetos em campo!
+</p>
+<a href="cadastro.html" class="botao-vol">Quero ser voluntário</a>
+</div>
+</div>
+</section>
 
-        <!-- Campo de e-mail -->
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+<!-- Sessão Doação -->
+<section id="doacoes" class="dest-secao">
+<div class="vol-box">
+<div class="vol-icone" style="background:#ffd1eb;color:#cf289c;">💙</div>
+<div>
+<h2>Doe e ajude a preservar</h2>
+<p>Sua doação nos ajuda a manter as ações e ampliar nosso impacto. Qualquer valor é muito
+importante!</p>
+<a href="#" class="botao-vol botao-doe">Doe agora</a>
+</div>
+</div>
+</section>
 
-        <!-- Valor da doação (select para simplicidade) -->
-        <label for="valor">Valor da doação</label>
-        <select id="valor" name="valor" required>
-          <option value="">Selecione</option>
-          <option value="25">R$25</option>
-          <option value="50">R$50</option>
-          <option value="100">R$100</option>
-          <option value="outro">Outro valor</option>
-        </select>
+</main>
 
-        <!-- Botão de enviar -->
-        <button type="submit" class="btn">Contribuir</button>
-      </form>
+<footer>
+<p>
+Instituto Eco Savanna | Fundado em 1985 | África - Savanna <br>
+Contato: <a href="mailto:contato@ecosavanna.org">contato@ecosavanna.org</a> |
+(99) 93939-9292
+</p>
+<p>&copy; 2025. Todos os direitos reservados.</p>
+</footer>
 
-      <!-- Nota: a validação básica do formulário pode ser feita pelo navegador (atributo required).
-           Para validações mais elaboradas usamos JavaScript. -->
-    </section>
-  </main>
-
-  <footer>
-    <p>© EcoSavanna — Contato: contato@ecosavanna.org</p>
-  </footer>
-
-  <script src="assets/js/main.js"></script>
+<script src="js/mascaras.js"></script>
+<script src="js/carrossel.js"></script>
 </body>
+
 </html>
