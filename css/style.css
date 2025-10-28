@@ -843,3 +843,52 @@ max-width: 1100px;
 margin: 38px auto 0 auto;
 padding: 0 18px;
 }
+
+/* === MODO ALTO CONTRASTE === */
+body.alto-contraste,
+body.alto-contraste header,
+body.alto-contraste main,
+body.alto-contraste section,
+body.alto-contraste footer {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+body.alto-contraste a,
+body.alto-contraste h1,
+body.alto-contraste h2,
+body.alto-contraste h3,
+body.alto-contraste h4,
+body.alto-contraste h5,
+body.alto-contraste h6,
+body.alto-contraste label,
+body.alto-contraste p,
+body.alto-contraste li {
+  color: #ffff00 !important; /* Texto amarelo */
+}
+
+body.alto-contraste input,
+body.alto-contraste textarea,
+body.alto-contraste select {
+  background: #222 !important;
+  color: #ffff00 !important;
+  border: 2px solid #ffff00 !important;
+}
+
+body.alto-contraste button,
+body.alto-contraste .botao {
+  background: #ffff00 !important;
+  color: #000 !important;
+}
+
+body.alto-contraste .card,
+body.alto-contraste .ajuda-item,
+body.alto-contraste .bio-card,
+body.alto-contraste .mvv-foto-mvv,
+body.alto-contraste .carrossel,
+body.alto-contraste fieldset {
+  background: #111 !important;
+  color: #ffff00 !important;
+  border-color: #ffff00 !important;
+  box-shadow: none !important;
+}
